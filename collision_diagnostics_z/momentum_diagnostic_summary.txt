@@ -9,20 +9,20 @@ every_step_sampled: {1: 102}
 population_unchanged: {1: 100, 0: 2}
 force_budget_complete: {1: 102}
 WARNING: step is constant. A consecutive-STEP test cannot establish per-step sampling.
-Strict impulse norm: max=3.017617201e-02, RMS=3.273065405e-03, n=85
-Strict rate-error norm: max=3.017617201e-01, RMS=3.273065405e-02, n=85
-Exploratory impulse norm: max=3.017617201e-02, RMS=3.273065405e-03, n=85
-Exploratory rate-error norm: max=3.017617201e-01, RMS=3.273065405e-02, n=85
+Strict impulse norm: max=7.105427358e-15, RMS=1.089922803e-15, n=85
+Strict rate-error norm: max=7.105427358e-14, RMS=1.089922803e-14, n=85
+Exploratory impulse norm: max=7.105427358e-15, RMS=1.089922803e-15, n=85
+Exploratory rate-error norm: max=7.105427358e-14, RMS=1.089922803e-14, n=85
 Coupling norm (selected window): max=0.000000000e+00, RMS=0.000000000e+00, n=85
-GLOBAL STATUS: CHECK on strict valid intervals only
+GLOBAL STATUS: PASS on strict valid intervals only
 Exploratory duration: 8.4000499999821994e+00
-Exploratory measured projected mean rate: 3.5923863906430521e-03
+Exploratory measured projected mean rate: 0.0000000000000000e+00
 Exploratory expected projected mean rate: 0.0000000000000000e+00
-Exploratory cumulative projected mismatch: 3.0176225300657222e-02
-Exploratory cumulative vector mismatch: 3.0176225300657222e-02
+Exploratory cumulative projected mismatch: 0.0000000000000000e+00
+Exploratory cumulative vector mismatch: 0.0000000000000000e+00
 Population/mass-change interval END times: [1.1000000000001091, 1.6000000000011645]
 Recorded expected force zero throughout selected window: True
 Maximum recorded expected force norm: 0.000000000e+00
-P_dem final-minus-anchor [x,y,z]: [0.0, 0.0, -0.030176225300671433]
-P_dpd final-minus-anchor [x,y,z]: [0.0, 0.0, 0.0603524506013289]
-P_total final-minus-anchor [x,y,z]: [0.0, 0.0, 0.030176225300657222]
+P_dem final-minus-anchor [x,y,z]: [0.0, 0.0, -0.06032550479943666]
+P_dpd final-minus-anchor [x,y,z]: [0.0, 0.0, 0.0603255047994355]
+P_total final-minus-anchor [x,y,z]: [0.0, 0.0, 0.0]

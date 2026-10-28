@@ -7,7 +7,7 @@ import KratosMultiphysics as KM
 import KratosMultiphysics.DEMApplication as DEM
 
 class ParticleStepLogger:
-    def __init__(self, model_part, start_time=5.6, end_time=6.0,
+    def __init__(self, model_part, start_time=5.89, end_time=6.0,
                  filename="particle_step_debug.csv"):
         self.mp = model_part
         self.start, self.end = start_time, end_time

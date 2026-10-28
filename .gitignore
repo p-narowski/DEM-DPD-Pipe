@@ -1,0 +1,22 @@
+# --- FOLDERS TO IGNORE ---
+Pipe_Graphs/
+Pipe_Post_Files/
+Pipe_Post_VTK_Files/
+
+# --- LOG FILES ---
+crash.log
+simulation.log
+*.log
+
+# --- POSTPROCESSING LIST FILES ---
+Pipe.post.lst
+PipeDEM.post.lst
+*.lst
+
+# --- OPTIONAL: IGNORE GENERATED MDPA FILES ---
+# Uncomment if these are generated automatically
+# *.mdpa
+
+# --- PYTHON CACHE ---
+__pycache__/
+*.pyc
