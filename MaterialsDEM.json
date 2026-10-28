@@ -1,0 +1,138 @@
+{
+    "materials": [{
+        "material_name": "DEM-Steel",
+        "material_id": 1,
+        "Variables": {
+            "PARTICLE_DENSITY": 7850,
+            "YOUNG_MODULUS": 200000000000.0,
+            "POISSON_RATIO": 0.3,
+            "PARTICLE_SPHERICITY": 1.0
+        }
+    },{
+        "material_name": "DEM-Polymer",
+        "material_id": 2,
+        "Variables": {
+            "PARTICLE_DENSITY": 900,
+            "YOUNG_MODULUS": 82500000.0,
+            "POISSON_RATIO": 0.42,
+            "PARTICLE_SPHERICITY": 1.0
+        }
+    },
+{
+            "material_name": "DEM-Suspended",
+            "material_id": 3,
+            "Variables": {
+                "PARTICLE_DENSITY": 1007.0,
+                "YOUNG_MODULUS": 8.25e7,
+                "POISSON_RATIO": 0.42,
+                "PARTICLE_SPHERICITY": 1.0,
+                "DPD_DEM_SEARCH_CUTOFF": 0.3
+            }
+        }],
+    "material_relations": [{
+        "material_names_list": ["DEM-Polymer","DEM-Steel"],
+        "material_ids_list": [2,1],
+        "Variables": {
+            "DEM_DISCONTINUUM_CONSTITUTIVE_LAW_NAME": "DEM_DPD_SPH_LIKE",
+            "PARTICLE_COHESION": 0.0,
+            "STATIC_FRICTION": 0.0,
+            "DYNAMIC_FRICTION": 0.0,
+            "FRICTION_DECAY": 500,
+            "COEFFICIENT_OF_RESTITUTION": 0.1,
+            "ROLLING_FRICTION": 0.03,
+            "ROLLING_FRICTION_WITH_WALLS": 0.01,
+            "DAMPING_GAMMA": 0.0,
+            "DPD_SMOOTHING_LENGTH": 0.002,
+            "DPD_CUTOFF_RADIUS": 0.005,
+            "DPD_CONSERVATIVE_COEFF": 0.0005,
+            "DPD_DISSIPATIVE_COEFF": 0.5,
+            "DPD_DISSIPATIVE_COEFF_NORMAL": 0.5,
+            "DPD_DISSIPATIVE_COEFF_TANGENTIAL": 1.0
+        }
+    },{
+        "material_names_list": ["DEM-Polymer","DEM-Polymer"],
+        "material_ids_list": [2,2],
+        "Variables": {
+            "DEM_DISCONTINUUM_CONSTITUTIVE_LAW_NAME": "DEM_DPD_SPH_LIKE",
+            "PARTICLE_COHESION": 0.0,
+            "STATIC_FRICTION": 0.0,
+            "DYNAMIC_FRICTION": 0.0,
+            "FRICTION_DECAY": 500,
+            "COEFFICIENT_OF_RESTITUTION": 0.1,
+            "ROLLING_FRICTION": 0.03,
+            "ROLLING_FRICTION_WITH_WALLS": 0.01,
+            "DAMPING_GAMMA": 0.0,
+            "DPD_SMOOTHING_LENGTH": 0.002,
+            "DPD_CUTOFF_RADIUS": 0.005,
+            "DPD_CONSERVATIVE_COEFF": 0.0005,
+            "DPD_DISSIPATIVE_COEFF": 0.5,
+            "DPD_DISSIPATIVE_COEFF_NORMAL": 0.5,
+            "DPD_DISSIPATIVE_COEFF_TANGENTIAL": 0.75
+        }
+    },{
+        "material_names_list": ["DEM-Steel","DEM-Steel"],
+        "material_ids_list": [1,1],
+        "Variables": {
+            "DEM_DISCONTINUUM_CONSTITUTIVE_LAW_NAME": "DEM_DPD_SPH_LIKE",
+            "PARTICLE_COHESION": 0.0,
+            "STATIC_FRICTION": 0.0,
+            "DYNAMIC_FRICTION": 0.0,
+            "FRICTION_DECAY": 500,
+            "COEFFICIENT_OF_RESTITUTION": 0.1,
+            "ROLLING_FRICTION": 0.03,
+            "ROLLING_FRICTION_WITH_WALLS": 0.01,
+            "DAMPING_GAMMA": 0.0,
+            "DPD_SMOOTHING_LENGTH": 0.002,
+            "DPD_CUTOFF_RADIUS": 0.005,
+            "DPD_CONSERVATIVE_COEFF": 0.0005,
+            "DPD_DISSIPATIVE_COEFF": 0.5,
+            "DPD_DISSIPATIVE_COEFF_NORMAL": 0.5,
+            "DPD_DISSIPATIVE_COEFF_TANGENTIAL": 1.0
+        }
+    },
+{
+        "material_names_list": ["DEM-Polymer","DEM-Suspended"],
+        "material_ids_list": [2,3],
+        "Variables": {
+            "DEM_DISCONTINUUM_CONSTITUTIVE_LAW_NAME": "DEM_DPD_DRAG",
+                "PARTICLE_COHESION": 0.0,
+                "STATIC_FRICTION": 0.0,
+                "DYNAMIC_FRICTION": 0.0,
+                "FRICTION_DECAY": 500.0,
+                "COEFFICIENT_OF_RESTITUTION": 0.1,
+                "ROLLING_FRICTION": 0.0,
+                "ROLLING_FRICTION_WITH_WALLS": 0.0,
+                "DAMPING_GAMMA": 0.0,
+                "DPD_SMOOTHING_LENGTH": 0.08,
+                "DPD_CUTOFF_RADIUS": 0.16,
+                "DPD_CONSERVATIVE_COEFF": 0.5,
+                "DPD_DISSIPATIVE_COEFF_NORMAL": 270.0,
+                "DPD_DISSIPATIVE_COEFF_TANGENTIAL":270.0
+        }
+    },
+{
+        "material_names_list": ["DEM-Suspended","DEM-Polymer"],
+        "material_ids_list": [3,2],
+        "Variables": {
+            "DEM_DISCONTINUUM_CONSTITUTIVE_LAW_NAME": "DEM_DPD_DRAG",
+                "PARTICLE_COHESION": 0.0,
+                "STATIC_FRICTION": 0.0,
+                "DYNAMIC_FRICTION": 0.0,
+                "FRICTION_DECAY": 500.0,
+                "COEFFICIENT_OF_RESTITUTION": 0.1,
+                "ROLLING_FRICTION": 0.0,
+                "ROLLING_FRICTION_WITH_WALLS": 0.0,
+                "DAMPING_GAMMA": 0.0,
+                "DPD_SMOOTHING_LENGTH": 0.08,
+                "DPD_CUTOFF_RADIUS": 0.16,
+                "DPD_CONSERVATIVE_COEFF": 0.5,
+                "DPD_DISSIPATIVE_COEFF_NORMAL": 270.0,
+                "DPD_DISSIPATIVE_COEFF_TANGENTIAL":270.0
+        }
+    }
+],
+    "material_assignation_table": [
+        ["DEMInletPart.Inlet_Left","DEM-Polymer"],
+        ["DEMInletPart.Inlet_Right","DEM-Suspended"]
+    ]
+}

@@ -1,0 +1,69 @@
+Begin ModelPartData
+//  VARIABLE_NAME value
+End ModelPartData
+
+Begin Properties 0
+End Properties
+
+Begin Nodes
+    91 0.0 0.0 5
+    4653 0.0 0.0 -5
+End Nodes
+
+
+Begin SubModelPart Inlet_Left // Group Left // Subtree Inlet
+    Begin SubModelPartData
+        RIGID_BODY_MOTION 0
+        //TABLE_VELOCITY_COMPONENT 0
+        IDENTIFIER Inlet_Left
+        INJECTOR_ELEMENT_TYPE DPDParticle
+        ELEMENT_TYPE DPDParticle
+        CONTAINS_CLUSTERS 0
+        VELOCITY [3] (0.0, 0.0, -1)
+        MAX_RAND_DEVIATION_ANGLE 0.0
+        INLET_NUMBER_OF_PARTICLES 1
+        IMPOSED_MASS_FLOW_OPTION 0
+        INLET_START_TIME 0.0
+        INLET_STOP_TIME 1.5
+        RADIUS 0.02
+        PROBABILITY_DISTRIBUTION normal
+        STANDARD_DEVIATION 0.0
+    End SubModelPartData
+    Begin SubModelPartNodes
+        91
+    End SubModelPartNodes
+  End SubModelPart
+    
+  Begin Table 0 TIME VELOCITY
+  0.0  0.0
+  1.0  1.0
+  End Table
+  
+Begin SubModelPart Inlet_Right // Group Right // Subtree Inlet
+    Begin SubModelPartData
+        RIGID_BODY_MOTION 0
+        //TABLE_VELOCITY_COMPONENT 0
+        IDENTIFIER Inlet_Right
+        INJECTOR_ELEMENT_TYPE SuspendedParticle
+        ELEMENT_TYPE SuspendedParticle
+        CONTAINS_CLUSTERS 0
+        VELOCITY [3] (0.0, 0.0, 1)
+        MAX_RAND_DEVIATION_ANGLE 0.0
+        INLET_NUMBER_OF_PARTICLES 1
+        IMPOSED_MASS_FLOW_OPTION 0
+        INLET_START_TIME 0.0
+        INLET_STOP_TIME 1.5
+        RADIUS 0.2
+        PROBABILITY_DISTRIBUTION normal
+        STANDARD_DEVIATION 0.0
+    End SubModelPartData
+    Begin SubModelPartNodes
+      4653
+    End SubModelPartNodes
+  End SubModelPart
+    
+  Begin Table 0 TIME VELOCITY
+  0.0  0.0
+  1.0  1.0
+  End Table
+  
